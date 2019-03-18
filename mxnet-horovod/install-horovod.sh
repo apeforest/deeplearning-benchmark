@@ -1,0 +1,1 @@
+touch ~/hosts && echo 'localhost slots:8' > ~/hosts && sudo pip install https://s3-us-west-2.amazonaws.com/mxnet-python-packages-gcc5/mxnet_cu90_gcc5-1.4.0-py2.py3-none-manylinux1_x86_64.whl && sudo HOROVOD_GPU_ALLREDUCE=NCCL pip install horovod && git clone --recursive https://github.com/horovod/horovod.git
