@@ -1,0 +1,1 @@
+touch ~/hosts && echo 'localhost slots:8' > ~/hosts && pip install mxnet-cu90 --pre --user && HOROVOD_GPU_ALLREDUCE=NCCL pip install horovod --user
