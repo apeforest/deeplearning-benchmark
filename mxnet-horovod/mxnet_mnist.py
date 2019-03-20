@@ -159,7 +159,7 @@ for epoch in range(args.epochs):
     if hvd.rank() == 0:
         elapsed = time.time() - tic
         speed = nbatch * args.batch_size * hvd.size() / elapsed
-        logging.info('Epoch[%d]\tSpeed=%.2f samples/s\tTime cost=%f',
+        logging.info('Epoch[%d]\tSpeed: %.2f samples/sec\tTime cost=%f',
                      epoch, speed, elapsed)
 
     # Evaluate model accuracy
